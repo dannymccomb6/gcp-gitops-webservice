@@ -19,7 +19,7 @@ resource "google_compute_instance" "web" {
 #!/bin/bash
 apt-get update -y
 apt-get install -y nginx
-echo "<h1>Hello from Terraform + GitOps v2</h1>" > /var/www/html/index.html
+echo "<h1>Hello from Terraform + GitOps. This is the first commit after initial deployment.</h1>" > /var/www/html/index.html
 systemctl enable nginx
 systemctl start nginx
 EOF
